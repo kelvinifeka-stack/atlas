@@ -17,7 +17,8 @@ def test_impact_analysis():
 
     analyzer = ImpactAnalyzer(graph)
 
-    affected = analyzer.affected_nodes("A1")
+    affected = analyzer.impact_radius("A1")
 
-    assert "M1" in affected
-    assert "D1" in affected
+    assert affected["A1"] == 0
+    assert affected["M1"] == 1
+    assert affected["D1"] == 2

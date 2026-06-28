@@ -1,27 +1,81 @@
 # Atlas
 
-Atlas is an experimental research project exploring computational representations of evidence-based reasoning and decision-making.
+Atlas is an engineering reasoning engine.
 
-## Current Status
+Unlike traditional engineering software, Atlas does not primarily simulate the physical world.
 
-- ✅ Graph engine
-- ✅ Impact analysis
-- ✅ Automated tests
+Atlas models the reasoning process behind engineering decisions.
 
-## Goals
+---
 
-- Represent evidence, assumptions, models, and decisions as a connected graph.
-- Analyze how changes propagate through the graph.
-- Investigate computational methods for transparent, traceable reasoning.
+## Vision
 
-## Running Tests
+Engineering decisions are based on:
 
-```bash
-python -m pytest
-```
+- Evidence
+- Assumptions
+- Models
+- Decisions
 
-## Example
+Atlas represents these as a graph and computes:
 
-```bash
-python examples/simple_decision.py
-```
+- Impact analysis
+- Confidence propagation
+- Reasoning paths
+- Decision traceability
+
+---
+
+## Current Features
+
+- Knowledge Graph
+- JSON Loader
+- CLI
+- Confidence Engine
+- Impact Engine
+- Explanation Engine
+- Relationship Semantics
+- Full Test Suite
+
+---
+
+## Roadmap
+
+### Phase I
+
+Knowledge Representation
+
+✅ Complete
+
+### Phase II
+
+Reasoning
+
+- Belief Propagation
+- Contradiction Handling
+- Decision Confidence
+- Assumption Failure
+
+### Phase III
+
+Engineering Intelligence
+
+- Oil & Gas
+- Civil
+- Mechanical
+- Aerospace
+- Chemical
+
+### Phase IV
+
+Atlas Studio
+
+Interactive graph visualization and engineering reports.
+
+---
+
+## Philosophy
+
+Physics engines simulate reality.
+
+Atlas simulates engineering reasoning.

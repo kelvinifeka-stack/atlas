@@ -1,0 +1,58 @@
+{
+  "evidence": [
+    {
+      "id": "E1",
+      "statement": "Pressure survey",
+      "confidence": 0.95
+    },
+    {
+      "id": "E2",
+      "statement": "Seismic interpretation",
+      "confidence": 0.82
+    }
+  ],
+
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Reservoir continuity"
+    }
+  ],
+
+  "models": [
+    {
+      "id": "M1",
+      "statement": "Reservoir simulation"
+    }
+  ],
+
+  "decisions": [
+    {
+      "id": "D1",
+      "statement": "Drill Well B"
+    }
+  ],
+
+  "relationships": [
+    {
+      "source": "E1",
+      "target": "A1",
+      "type": "supports"
+    },
+    {
+      "source": "E2",
+      "target": "A1",
+      "type": "supports"
+    },
+    {
+      "source": "A1",
+      "target": "M1",
+      "type": "used_by"
+    },
+    {
+      "source": "M1",
+      "target": "D1",
+      "type": "produces"
+    }
+  ]
+}

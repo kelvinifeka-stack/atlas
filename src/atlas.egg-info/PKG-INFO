@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: atlas
+Version: 0.1.0
+Summary: Engineering reasoning engine
+Requires-Python: >=3.14
+License-File: LICENSE
+Requires-Dist: networkx>=3.0
+Dynamic: license-file

@@ -12,31 +12,22 @@ class AtlasGraph:
             **attributes
         )
 
-    def add_edge(self, source, target, relationship):
+    def add_edge(self, source, target, relationship, **attributes):
         self.graph.add_edge(
             source,
             target,
-            relationship=relationship
+            relationship=relationship,
+            **attributes
         )
 
-    def successors(self, node):
-        return list(self.graph.successors(node))
-
-    def predecessors(self, node):
-        return list(self.graph.predecessors(node))
-
-    def show(self):
-        print("Nodes")
-        for n, d in self.graph.nodes(data=True):
-            print(n, d)
-
-        print("\nEdges")
-        for u, v, d in self.graph.edges(data=True):
-            print(f"{u} --{d['relationship']}--> {v}")
-
-    def get_node(self, node_id):
+    def node(self, node_id):
         return self.graph.nodes[node_id]
 
+    def descendants(self, node_id):
+        return list(nx.descendants(self.graph, node_id))
 
-    def neighbors(self, node_id):
-        return list(self.graph.neighbors(node_id))
+    def ancestors(self, node_id):
+        return list(nx.ancestors(self.graph, node_id))
+
+    def shortest_path(self, source, target):
+        return nx.shortest_path(self.graph, source, target)
