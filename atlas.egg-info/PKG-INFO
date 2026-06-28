@@ -1,0 +1,91 @@
+Metadata-Version: 2.4
+Name: atlas
+Version: 0.1.0
+Summary: Engineering reasoning engine
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: networkx>=3.0
+Dynamic: license-file
+
+# Atlas
+
+Atlas is an engineering reasoning engine.
+
+Unlike traditional engineering software, Atlas does not primarily simulate the physical world.
+
+Atlas models the reasoning process behind engineering decisions.
+
+---
+
+## Vision
+
+Engineering decisions are based on:
+
+- Evidence
+- Assumptions
+- Models
+- Decisions
+
+Atlas represents these as a graph and computes:
+
+- Impact analysis
+- Confidence propagation
+- Reasoning paths
+- Decision traceability
+
+---
+
+## Current Features
+
+- Knowledge Graph
+- JSON Loader
+- CLI
+- Confidence Engine
+- Impact Engine
+- Explanation Engine
+- Relationship Semantics
+- Full Test Suite
+
+---
+
+## Roadmap
+
+### Phase I
+
+Knowledge Representation
+
+✅ Complete
+
+### Phase II
+
+Reasoning
+
+- Belief Propagation
+- Contradiction Handling
+- Decision Confidence
+- Assumption Failure
+
+### Phase III
+
+Engineering Intelligence
+
+- Oil & Gas
+- Civil
+- Mechanical
+- Aerospace
+- Chemical
+
+### Phase IV
+
+Atlas Studio
+
+Interactive graph visualization and engineering reports.
+
+---
+
+## Philosophy
+
+Physics engines simulate reality.
+
+Atlas simulates engineering reasoning.

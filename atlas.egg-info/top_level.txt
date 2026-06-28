@@ -1,0 +1,2 @@
+atlas_cli
+atlas_core
